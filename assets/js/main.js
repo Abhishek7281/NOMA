@@ -34,6 +34,18 @@
     }
   }
 
+   //disable button
+  const offButton = document.getElementById("offButton");
+const submitButton = document.getElementById("submitButton");
+offButton.addEventListener("change", function() {
+  if (offButton.checked) {
+    submitButton.disabled = true;
+  } else {
+    submitButton.disabled = false;
+  }
+});
+
+  
   /**
    * Easy on scroll event listener 
    */
